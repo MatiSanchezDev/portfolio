@@ -1,12 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Home, Presentation, MessagesSquare, User } from "lucide-react";
+import { Home, BriefcaseBusiness, MessagesSquare, User } from "lucide-react";
 
 const sections = [
   { id: "Inicio", icon: Home },
   { id: "Sobre Mi", icon: User },
-  { id: "pricing", icon: Presentation },
-  { id: "contact", icon: MessagesSquare },
+  { id: "Trabajo", icon: BriefcaseBusiness },
+  { id: "Contacto", icon: MessagesSquare },
 ];
 
 export default function SectionIndicator() {
@@ -34,7 +34,7 @@ export default function SectionIndicator() {
 
   return (
     <>
-      <div className="fixed left-10 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-50">
+      <div className="fixed left-10 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-50 ">
         {sections.map(({ id, icon: Icon }) => (
           <button
             key={id}
@@ -43,10 +43,10 @@ export default function SectionIndicator() {
               if (el) el.scrollIntoView({ behavior: "smooth" });
             }}
             title={`Ir a ${id}`}
-            className={`p-3 rounded-full transition-colors duration-300 ${
+            className={`p-3 rounded-full transition-colors duration-300  ${
               active === id
                 ? "bg-msdev-progress-bar text-black scale-110"
-                : "bg-gray-700 text-white hover:bg-msdev-progress-bar hover:text-black hover:cursor-pointer"
+                : "bg-gray-700 text-white hover:bg-msdev-progress-bar hover:text-black "
             }`}
           >
             <Icon size={20} />
