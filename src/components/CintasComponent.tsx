@@ -50,7 +50,7 @@ export default function CintasComponent() {
   return (
     <div
       ref={containerRef}
-      className="relative min-h-96 overflow-hidden sepia-75"
+      className="relative w-full min-h-96 overflow-hidden sepia-75"
     >
       {/* Línea 1 - arriba */}
       <div
