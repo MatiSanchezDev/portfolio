@@ -6,6 +6,8 @@ const Expressjs = (props: SVGProps<SVGSVGElement>) => (
     viewBox="0 0 32 32"
     width="1em"
     height="1em"
+    fill="currentColor"
+    stroke="currentColor"
     {...props}
   >
     <path

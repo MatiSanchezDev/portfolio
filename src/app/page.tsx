@@ -1,4 +1,3 @@
-import CintasContratar from "@/components/CintasComponent";
 import { Contacto } from "@/components/Contacto";
 import { Hero } from "@/components/Hero";
 import SectionIndicator from "@/components/SectionIndicator";
@@ -11,7 +10,6 @@ export default function HomePage() {
       <SectionIndicator />
       <Hero />
       <SobreMi />
-      <CintasContratar />
       <Trabajos />
       <Contacto />
     </>

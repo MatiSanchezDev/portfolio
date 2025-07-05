@@ -1,17 +1,18 @@
 import { LiquidButton } from "@/components/animate-ui/buttons/liquid";
 import { MotionEffect } from "@/components/animate-ui/effects/motion-effect";
 import { WritingText } from "@/components/animate-ui/text/writing";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
+import { ArrowRight, ChevronsDown } from "lucide-react";
+//import Image from "next/image";
 import Link from "next/link";
+import Card from "./HeroImage";
 
 export const Hero = () => {
   return (
     <section
       id="Inicio"
-      className="relative w-full h-screen flex justify-center items-center pb-40 gap-6"
+      className="relative w-full h-screen flex md:flex-row flex-col justify-center items-center pb-40 gap-6"
     >
-      <MotionEffect
+      {/* <MotionEffect
         fade
         blur="10px"
         transition={{
@@ -30,13 +31,27 @@ export const Hero = () => {
             priority
           />
         </div>
+      </MotionEffect> */}
+      <MotionEffect
+        fade
+        blur="10px"
+        transition={{
+          duration: 0.6,
+          ease: "easeInOut",
+        }}
+        inView
+      >
+        <Card />
       </MotionEffect>
       <div className="flex flex-col justify-center items-center">
         <WritingText
-          text="MS.Dev"
-          className="font-tanker text-9xl text-center text-msdev-secondary "
+          text="Matias"
+          className="font-tanker text-8xl md:text-9xl text-center text-msdev-secondary "
         />
-        <WritingText className="text-4xl  " text="Front End Developer" />
+        <WritingText
+          className="text-3xl md:text-4xl"
+          text="Front End Developer"
+        />
         <MotionEffect
           fade
           blur="10px"
@@ -75,7 +90,7 @@ export const Hero = () => {
           ease: "easeInOut",
         }}
         inView
-        className="absolute bottom-70 right-30 flex flex-col justify-end items-end"
+        className="absolute bottom-10 md:bottom-40 md:right-25 lg:bottom-60 lg:right-35 flex flex-col justify-center items-center md:justify-end md:items-end"
       >
         <span className="text-5xl font-tanker text-msdev-progress-bar">4+</span>
         <span className="font-lexend font-light text-xl mb-3">
@@ -84,6 +99,20 @@ export const Hero = () => {
         <span className="text-5xl font-tanker text-msdev-progress-bar">2</span>
         <span className="font-lexend font-light text-xl">
           Experiencia laborales
+        </span>
+      </MotionEffect>
+      <MotionEffect
+        fade
+        blur="10px"
+        transition={{
+          duration: 1.5,
+          ease: "easeInOut",
+        }}
+        inView
+        className="hidden md:block md:absolute left-1/2 md:bottom-6 lg:bottom-20 -translate-x-1/2"
+      >
+        <span className="">
+          <ChevronsDown className="w-20 h-20 text-msdev-secondary animate-bounce animate-infinite animate-ease-in" />
         </span>
       </MotionEffect>
     </section>

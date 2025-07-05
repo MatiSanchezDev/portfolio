@@ -34,7 +34,7 @@ export default function SectionIndicator() {
 
   return (
     <>
-      <div className="fixed left-10 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-50 ">
+      <div className="fixed left-1/2 md:left-10 bottom-10 md:top-1/2 -translate-x-1/2 md:-translate-y-1/2 flex flex-row md:flex-col gap-4 z-50">
         {sections.map(({ id, icon: Icon }) => (
           <button
             key={id}
@@ -45,7 +45,7 @@ export default function SectionIndicator() {
             title={`Ir a ${id}`}
             className={`p-3 rounded-full transition-colors duration-300  ${
               active === id
-                ? "bg-msdev-progress-bar text-black scale-110"
+                ? "bg-msdev-progress-bar text-black scale-110 animate-bounce animate-infinite animate-ease-out animate-reverse animate-fill-both"
                 : "bg-gray-700 text-white hover:bg-msdev-progress-bar hover:text-black "
             }`}
           >
