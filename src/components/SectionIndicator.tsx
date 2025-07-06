@@ -1,12 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Home, BriefcaseBusiness, MessagesSquare, User } from "lucide-react";
+import { Home, BriefcaseBusiness, Mail, User } from "lucide-react";
 
 const sections = [
   { id: "Inicio", icon: Home },
   { id: "Sobre Mi", icon: User },
   { id: "Trabajo", icon: BriefcaseBusiness },
-  { id: "Contacto", icon: MessagesSquare },
+  { id: "Contacto", icon: Mail },
 ];
 
 export default function SectionIndicator() {

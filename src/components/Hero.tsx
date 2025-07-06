@@ -1,10 +1,11 @@
 import { LiquidButton } from "@/components/animate-ui/buttons/liquid";
 import { MotionEffect } from "@/components/animate-ui/effects/motion-effect";
 import { WritingText } from "@/components/animate-ui/text/writing";
-import { ArrowRight, ChevronsDown } from "lucide-react";
+import { ArrowRight, ChevronsDown, Newspaper } from "lucide-react";
 //import Image from "next/image";
 import Link from "next/link";
 import Card from "./HeroImage";
+import GitHub from "./icons/IconGithub";
 
 export const Hero = () => {
   return (
@@ -63,11 +64,12 @@ export const Hero = () => {
         >
           <LiquidButton className="font-lexend text-lg mt-4 border">
             <Link
-              href={"https://www.linkedin.com/in/ms-dev-web/"}
+              href={"https://github.com/MatiSanchezDev"}
               target="__blank"
               className="flex items-center justify-center gap-2"
             >
-              Ver LinkedIn <ArrowRight />
+              <GitHub className="w-4 h-4" />
+              Github <ArrowRight />
             </Link>
           </LiquidButton>
           <LiquidButton className="font-lexend text-lg mt-4 border ml-3">
@@ -77,7 +79,8 @@ export const Hero = () => {
               rel="noopener noreferrer"
               className="flex justify-center items-center gap-2"
             >
-              Ver CV <ArrowRight />
+              <Newspaper />
+              CV <ArrowRight />
             </Link>
           </LiquidButton>
         </MotionEffect>

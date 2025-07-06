@@ -5,6 +5,7 @@ const GitHub = (props: SVGProps<SVGSVGElement>) => (
     width="1em"
     height="1em"
     viewBox="0 0 1024 1024"
+    stroke="currentColor"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
