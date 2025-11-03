@@ -190,7 +190,7 @@ export const Trabajos = () => {
 
               <div className="mb-4">
                 <h3 className="text-xs font-semibold text-white/80 mb-2">
-                  Mayo 2025 - junio 2025
+                  Mayo 2025 - Octubre 2025
                 </h3>
                 <div className="flex flex-wrap -mx-1">
                   <div className="px-2 py-1 m-0.5 bg-white/10 rounded-full text-xs font-medium text-white/70 shadow-sm border border-white/20 transition-all duration-300 hover:bg-white/20">
